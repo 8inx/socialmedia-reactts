@@ -1,3 +1,7 @@
+import Feed from "components/Feed";
+import Navbar from "components/Navbar";
+import Rightbar from "components/Rightbar";
+import Sidebar from "components/Sidebar";
 import styled from "styled-components";
 
 const HomeContainer = styled.div`
@@ -14,7 +18,14 @@ const FlexContainer = styled.div`
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <HomeContainer>
+      <Navbar/>
+      <FlexContainer>
+        <Sidebar/>
+        <Feed/>
+        <Rightbar/>
+      </FlexContainer>
+    </HomeContainer>
   )
 }
 

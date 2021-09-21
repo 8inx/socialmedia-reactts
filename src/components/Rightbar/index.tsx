@@ -4,6 +4,7 @@ import { appScrollbar, media } from "config/constants";
 import BirthdayReminders from "components/BirthdayReminders";
 import Sponsored from "components/Sponsored";
 import PageBreak from "shared/PageBreak";
+import Contacts from "components/Contacts";
 
 const RightbarContainer = styled.div`
   ${appScrollbar}
@@ -28,7 +29,7 @@ const Rightbar = () => {
         <PageBreak/>
         <BirthdayReminders/>
         <PageBreak/>
-        <PaneTitle>Contacts</PaneTitle>
+        <Contacts/>
       </RightbarContainer>
   )
 }

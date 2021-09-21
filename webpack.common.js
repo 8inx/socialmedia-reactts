@@ -8,7 +8,6 @@ module.exports = {
     app: './src/index.tsx'
   },
 
-
   output: {
     filename: 'js/[name].bundle.js',
     path: path.resolve(__dirname, 'public'),

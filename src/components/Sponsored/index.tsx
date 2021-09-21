@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import PaneTitle from "shared/PaneTitle";
 import Pressable from "shared/Pressable";
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   display: flex;
   align-items: center;
   padding: 8px;
@@ -28,14 +28,14 @@ const Sponsored = () => {
   return (
       <>
         <PaneTitle>Sponsored</PaneTitle>
-        <StyledLink to="/">
+        <StyledLink href="https://shopee.ph/" target="_blank">
           <StyledImage src={ImageAd1}/>
           <span>
             <h4>Shopee</h4>
             <small>ads.shopee.com</small>
           </span>
         </StyledLink>
-        <StyledLink to="/">
+        <StyledLink href="https://www.huawei.com" target="_blank">
           <StyledImage src={ImageAd2}/>
           <span>
             <h4>Huawei Mobile</h4>

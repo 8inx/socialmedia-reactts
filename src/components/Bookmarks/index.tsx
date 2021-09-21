@@ -1,4 +1,6 @@
 import Pressable from "shared/Pressable";
+import Avatar from "shared/Avatar";
+
 import IconPeople from "assets/icons/people.png"
 import IconMostRecent from "assets/icons/most_recent.png"
 import IconMessenger from "assets/icons/messenger.png"
@@ -16,10 +18,16 @@ import IconPages from "assets/icons/pages.png"
 import IconPlay from "assets/icons/play.png"
 import IconWatch from "assets/icons/watch.png"
 import IconWeather from "assets/icons/weather.png"
+import ProfilePic from "assets/image/profile.jpg"
+
 
 const Bookmarks = () => {
   return (
       <>
+        <Pressable to="/">
+          <Avatar src={ProfilePic}/>
+          <span>Jane Doe</span>
+        </Pressable>
         <Pressable to="/" src={IconPeople} >Friends</Pressable>
         <Pressable to="/" src={IconMostRecent}>Most Recent</Pressable>
         <Pressable to="/" src={IconMessenger}>Messenger</Pressable>

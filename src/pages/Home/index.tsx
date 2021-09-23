@@ -11,9 +11,10 @@ const HomeContainer = styled.div`
 `
 const FlexContainer = styled.div`
   display: flex;
+  justify-content: center;
   margin-top: 56px;
   width: 100vw;
-  max-width: 1200px;
+  max-width: 1366px;
 `
 
 const Home = () => {
